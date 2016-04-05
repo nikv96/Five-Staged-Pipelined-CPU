@@ -83,7 +83,7 @@ control C0 (.inst_cntrl(INST[31:26]),.wen_cntrl(wen),.alusrc_cntrl(alusrc), .alu
 
 regfile  RF0 ( .clk(clk), .rst(rst), .wen(wen_MEM_WB), .raddr1(INST[25:21]), 
 					.raddr2(INST[20:16]), .waddr(waddr_out_MEM_WB), 
-					.wdata(wbdata), .rdata1(rdata1), .rdata2(rdata2));
+					.wdata(aluout_WB), .rdata1(rdata1), .rdata2(rdata2));
 //NOTE:SET wbdata value appropriately
 
 //sign extension for immediate needs to be done for I type instuction.
