@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Y:/CE3001_Lab3/test_bench_3_stage_pipeline.xst" -ofn "Y:/CE3001_Lab3/test_bench_3_stage_pipeline.syr" 
