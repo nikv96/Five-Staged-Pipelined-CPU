@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-08T21:45:02</DateModified>
-  <ModuleName>pipelined_regfile_4stage</ModuleName>
+  <DateModified>2016-04-05T20:18:01</DateModified>
+  <ModuleName>pipelined_regfile_3stage</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//Client/C$/Five-Staged-Pipelined-CPU/Lab 3/iseconfig/pipelined_regfile_4stage.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>//Client/C$/Five-Staged-Pipelined-CPU/Lab 3\</ImplementationReportsDirectory>
-  <DateInitialized>2016-03-06T00:25:41</DateInitialized>
+  <SavedFilePath>Y:/Five-Staged-Pipelined-CPU/FiveStagedCPU/iseconfig/test_bench_3_stage_pipeline.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Y:/Five-Staged-Pipelined-CPU/FiveStagedCPU</ImplementationReportsDirectory>
+  <DateInitialized>2016-04-05T20:18:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
