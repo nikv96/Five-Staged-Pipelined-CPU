@@ -30,6 +30,7 @@ module EXE_MEM_Stage(
 	 input memRead_in,
 	 input memToReg_in,
 	 input wen_in,
+	 input jal_in,
 	 input [`ISIZE-1:0] PC_in,
 	 
 	 output reg [`ASIZE-1:0] w_addr_out,
@@ -39,6 +40,7 @@ module EXE_MEM_Stage(
 	 output reg memRead_out,
 	 output reg memToReg_out,
 	 output reg wen_out,
+	 output reg jal_out,
 	 output reg [`ISIZE-1:0] PC_out
     );
 	 
@@ -53,6 +55,7 @@ module EXE_MEM_Stage(
 			memRead_out <= 0;
 			memToReg_out <= 0;
 			wen_out <= 0;
+			jal_out<=0;
 			PC_out <= 0;
 		end
 		else
@@ -64,6 +67,7 @@ module EXE_MEM_Stage(
 			memRead_out <= memRead_in;
 			memToReg_out <= memToReg_in;
 			wen_out <= wen_in;
+			jal_out<=jal_in;
 			PC_out <= PC_in;
 		end
 	end

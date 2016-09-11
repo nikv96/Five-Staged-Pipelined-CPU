@@ -26,6 +26,7 @@ module MEM_WB_Stage(
     input [`DSIZE-1:0] w_data_in,
     input [`ASIZE-1:0]w_addr_in,
 	 input [`ISIZE-1:0]PC_in,
+	 input jal_in,
 	 input MemtoReg_in,
 	 input [`DSIZE-1:0] readMem_in,
 	 
@@ -33,6 +34,7 @@ module MEM_WB_Stage(
 	 output reg[`DSIZE-1:0] w_data_out,
     output reg[`ASIZE-1:0] w_addr_out,
 	 output reg wen_out,
+	 output reg jal_out,
 	 output reg MemtoReg_out,
 	 output reg [`DSIZE-1:0] readMem_out
     );
@@ -45,6 +47,7 @@ module MEM_WB_Stage(
 			w_data_out <= 0;
 			w_addr_out <= 0;
 			wen_out <= 0;
+			jal_out<=0;
 			MemtoReg_out <= 0;
 			readMem_out <= 0;
 		end
@@ -54,6 +57,7 @@ module MEM_WB_Stage(
 			w_data_out <= w_data_in;
 			w_addr_out <= w_addr_in;
 			wen_out <= wen_in;
+			jal_out<=jal_in;
 			MemtoReg_out <= MemtoReg_in;
 			readMem_out <= readMem_in;
 		end
